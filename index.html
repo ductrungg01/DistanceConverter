@@ -32,6 +32,9 @@
     <div class="container bottom" id="answer">
     	<h2 class="invisible">Answer goes here</h2>
     </div>
+	<div>
+		<p class="direction">Press the "K" key to switch to kilometers converstion, press the "M" key to switch to mile converstion</p>
+	</div>
 
 	<script>
 		var convertType = "miles";
@@ -45,9 +48,17 @@
 
 			// catch event keydown
 			var key = event.code;
-			alert(key);
 
 			// change convert Type
+			if (key == 'KeyM'){
+				convertType = "miles";
+				heading.innerHTML = "Miles to Kilometers Converter";
+				intro.innerHTML = "Type in a number of miles and click the button to convert the distance to kilometers.";
+			} else if (key == 'KeyK'){
+				convertType = "kilometers";
+				heading.innerHTML = "Kilometers to Miles Converter";
+				intro.innerHTML = "Type in a number of kilometers and click the button to convert the distance to miles.";
+			}
 		});
 
 		form.addEventListener('submit', function(event){

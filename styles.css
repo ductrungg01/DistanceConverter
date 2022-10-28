@@ -46,6 +46,14 @@ p {
 	margin-bottom:1em;
 }
 
+.direction {
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -132,3 +140,5 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
+
+
