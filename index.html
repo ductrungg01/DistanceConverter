@@ -40,7 +40,19 @@
 		var answerDiv = document.getElementById('answer');
 		var form = document.getElementById('convert');
 
-		
+		document.addEventListener('keydown', function(event){
+			event.preventDefault();
+
+			// catch event keydown
+			var key = event.code;
+			alert(key);
+
+			// change convert Type
+		});
+
+		form.addEventListener('submit', function(event){
+			event.preventDefault();
+		});
 	</script>
 </body>
 </html>
